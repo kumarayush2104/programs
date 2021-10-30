@@ -3,3 +3,6 @@ all:
 
 new:
 	./new.sh
+
+reset:
+	./remove.sh
