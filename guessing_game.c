@@ -16,9 +16,10 @@ main() {
 	int randNum = rand() % 11;
 
 	if( randNum == num ) {
-		printf("You got me !!!\n");
+		printf("You got me !!!\n\n\n");
 	} else {
 		printf("Sorry, The integer I was thinking is %d\n\n\n", randNum);
 	}
+
 
 }

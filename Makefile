@@ -9,3 +9,6 @@ reset:
 
 custom:
 	./.custom.sh
+
+keyclear:
+	rm -rfv include/keychain/*
