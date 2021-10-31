@@ -1,8 +1,11 @@
 all:
-	./build.sh
+	./.build.sh
 
 new:
-	./new.sh
+	./.new.sh
 
 reset:
-	./remove.sh
+	./.remove.sh
+
+custom:
+	./.custom.sh
