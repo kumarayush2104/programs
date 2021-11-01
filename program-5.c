@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "include/enroll.h"
-
+#include "include/clear.h"
 main() {
+	clear();
 	float tempF, tempC;
 	enroll();
 	printf("\nEnter Temperature in F: ");

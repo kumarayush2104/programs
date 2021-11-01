@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include "include/clear.h"
 #include "include/enroll.h"
 
 main() {
 	long enrollNum;
 	char name[100], college[300], course[100];
+	clear();
 	enroll();
 	printf("Enter Name: ");
 	scanf("%[^\n]s", name);
