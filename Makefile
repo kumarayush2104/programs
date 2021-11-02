@@ -4,11 +4,9 @@ all:
 new:
 	./.new.sh
 
-reset:
+clean:
 	./.remove.sh
+	rm -rfv include/keychain/*
 
 custom:
 	./.custom.sh
-
-keyclear:
-	rm -rfv include/keychain/*
