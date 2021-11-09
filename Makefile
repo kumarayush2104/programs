@@ -1,12 +1,12 @@
 all:
-	./.build.sh
+	./script/build.sh
 
 new:
-	./.new.sh
+	./script/new.sh
 
 clean:
-	./.remove.sh
+	./script/remove.sh
 	rm -rfv include/keychain/*
 
 custom:
-	./.custom.sh
+	./script/custom.sh
