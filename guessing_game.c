@@ -20,7 +20,7 @@ main() {
 		printf("You are supposed to write an integer\n\n");
 		exit(0);
 	}
-	else if (num > 10 || num <= 0) {
+	else if (num > 10 || num < 0) {
 		printf("You are supposed to write in 0 to 10\n\n");
 		exit(0);
 	}
