@@ -1,3 +1,4 @@
+#!/bin/bash
 
 clear
 echo "New program number"
