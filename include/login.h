@@ -27,7 +27,10 @@ pass() {
 	scanf("\n%[^\n]s", check_pass);
 	fread(pass_buffer, sizeof(char), 100, name_exist);
 	if(  strcmp(pass_buffer, check_pass) == 0 ) {
-		printf("Login Success\n\n");
+		clear();
+		printf("This is Keychain program ver:1.4\n\n");
+		printf("Welcome, %s\n\n\n", check_name);
+		exit(0);
 	} else {
 		clear();
 		printf("Wrong Password, Please try again\n\n");

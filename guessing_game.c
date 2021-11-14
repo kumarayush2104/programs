@@ -29,7 +29,8 @@ main() {
 		printf("\nYou are wrong, I was thinking about %d\n\n", randNum);
 	}
 
-	printf("Game will reset in 3 secs...\n\n");
+	printf("Game will reset in 3 secs...\n");
+	printf("Press Ctrl+C to quit\n\n");
 	sleep(2);
 	main();
 }
