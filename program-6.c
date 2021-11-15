@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "include/enroll.h"
 #include "include/clear.h"
+
+const float PI = 3.14;
+
 main() {
 	clear();
 	enroll();
@@ -11,7 +14,7 @@ main() {
 	printf("----------------------------------\n");
 	printf("Enter Radius of circle: ");
 	scanf("%f",  &circle_rad);
-	float circle_area = (circle_rad*circle_rad*22)/7;
+	float circle_area = circle_rad*circle_rad*PI;
 	printf("Area of Circle: %.2f\n\n", circle_area);
 
 // Rectangle
@@ -33,6 +36,6 @@ main() {
 	printf("----------------------------------\n");
 	printf("Enter Radius of Sphere: ");
 	scanf("%f",  &sphere_rad);
-	float sphere_area = (4*22*sphere_rad*sphere_rad)/7;
+	float sphere_area = 4*sphere_rad*sphere_rad*PI;
 	printf("Area of Sphere: %.2f\n\n", sphere_area);
 }
