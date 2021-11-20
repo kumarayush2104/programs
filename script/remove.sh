@@ -1,5 +1,5 @@
 #!/bin/bash
 
 shopt -s extglob
-rm -v !(*.c|include|*.sh|Makefile|script)
+rm -vr !(*.c|include|*.sh|Makefile|script|test_pro)
 shopt -u extglob
