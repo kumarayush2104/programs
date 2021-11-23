@@ -10,6 +10,8 @@ main() {
 	if ( !(age>17) ) {
 		system("clear");
 		printf("\n\nGo away Kid\n\n");
+		sleep(2);
+		main();
 	} else {
 		program();
 	}
