@@ -11,6 +11,7 @@ main() {
 		printf("\n\nYou have lived for %d\n\n", age*365*24*60*60);
 		return 0;
 	}
-	printf("You have entered wrong input\n\n");
-	return 1;
+	if (tmp == 0){
+		printf("You have entered wrong input\n\n");
+	}
 }
