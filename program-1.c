@@ -5,5 +5,5 @@
 main() {
 	clear();
         enroll();
-	printf("Hello World\n\n");
+	printf("\n\nHello World\n\n");
 }
