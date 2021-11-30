@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "include/clear.h"
-#include "include/enroll.h"
-#include "include/register.h"
-#include "include/login.h"
+#include "../include/clear.h"
+#include "../include/enroll.h"
+#include "../include/register.h"
+#include "../include/login.h"
 
 main() {
 	clear();
@@ -24,7 +24,7 @@ main() {
 			clear();
 			login();
 		default:
-			exit(1);
+			exit(0);
 	}
 
 }

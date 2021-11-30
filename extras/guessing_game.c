@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "include/enroll.h"
-#include "include/clear.h"
+#include "../include/enroll.h"
+#include "../include/clear.h"
 
 main() {
 	clear();
