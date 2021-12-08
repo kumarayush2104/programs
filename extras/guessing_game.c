@@ -17,7 +17,11 @@ main() {
 	srand(time(NULL));
 	int randNum = rand() % 11;
 	if (scanf("%d", &num) != 1) {
-		scanf("%*[^\n]", &num);
+		scanf("%s", &num);
+		if( num==1953069157 || num==1414092869 ){
+			clear();
+			exit(0);
+		}
 		printf("\nYou are supposed to write an integer\n\n");
 	}
 	else if (num > 10 || num < 0) {
@@ -30,7 +34,7 @@ main() {
 	}
 
 	printf("Game will reset in 3 secs...\n");
-	printf("Press Ctrl+C to quit\n\n");
+	printf("Write \"exit\" or \"EXIT\" to quit\n\n");
 	sleep(2);
 	main();
 }
