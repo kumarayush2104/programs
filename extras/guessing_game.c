@@ -18,6 +18,7 @@ main() {
 	int randNum = rand() % 11;
 	if (scanf("%d", &num) != 1) {
 		scanf("%s", &num);
+	printf("%d", num);
 		if( num==1953069157 || num==1414092869 ){
 			clear();
 			exit(0);
