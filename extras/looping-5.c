@@ -2,11 +2,14 @@
 
 main() {
 	int base;
+	system("clear");
 	printf("Enter base of the triangle: ");
 	scanf("%d", &base);
 	if( base%2 != 0) {
 		base++;
-		printf(" Warning !! taking a even number as a base !!\n\n\n\n");
+		printf("\033[1;33m");
+		printf("\n\nWarning !! taking a even number as a base !!\n\n\n\n");
+		printf("\033[1;37m");
 	}
 	int ref=base;
 	for(int i=0;i<=base/2;i++) {
