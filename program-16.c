@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include "include/enroll.h"
+#include "include/color.h"
 
 main() {
 	system("clear");
+	blink();
         enroll();
-	int  num;long long long one=1;
+	stop_blink();
+	int  num;long long one=1;
 	printf("Enter a number to get its factorial: ");
 	scanf("%d", &num);
 	for(int i=1;i<=num;i++) {

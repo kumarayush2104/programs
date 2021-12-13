@@ -18,3 +18,22 @@ white() {
 	printf("\033[1;37m");
 }
 
+italic() {
+	printf("\033[3;37m");
+}
+
+underline() {
+	printf("\033[4;37m");
+}
+
+blink() {
+	printf("\033[5;37m");
+}
+
+//stop_blink() {
+//	printf("\x1b[0m\x1b[5;1f");
+//}
+
+stop_blink() {
+	printf("\033[0m\033[1;1");
+}

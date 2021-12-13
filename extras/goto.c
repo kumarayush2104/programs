@@ -1,18 +1,20 @@
 #include <stdio.h>
-#include "../include/message.h"
 
 main() {
-	system("clear");
-	printf("Testing GOTO\n\n");
-	int x=0, z=0;
-		if (x==0) {
-			if( z== 0) {
-				goto test;
-			}
-		}
-	test: {
-		warning("Go to is running");
-		error("Go to is running");
-		info("Go to is running");
+	int num;
+	printf("Enter a number to check if its odd or even: ");
+	scanf("%d", &num);
+	if(num%2==0) {
+		goto even;
+	} else {
+		goto odd;
+	}
+	even: {
+		printf("\n\nIt is a even number\n\n");
+		return 0;
+	}
+	odd: {
+		printf("\n\nIt is a odd number\n\n");
+		return 0;
 	}
 }
