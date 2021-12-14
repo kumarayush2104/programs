@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include "include/enroll.h"
-#include "include/color.h"
 
 main() {
 	system("clear");
-	blink();
         enroll();
 	stop_blink();
 	int  num;long long one=1;
