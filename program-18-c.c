@@ -10,7 +10,7 @@ main() {
 	scanf("%d", &rows);
 	int base=rows;
 	if(rows%2!=0) warning("You are using odd number as a base, you may face some unexpected results !!");
-	for(int x=1;x<=rows/2;x++) {
+	for(int x=1;x<=rows;x++) {
 		for(int y=base;y>0;y--) {
 			printf("  ");
 		}
