@@ -5,7 +5,7 @@ main() {
 	system("clear");
         enroll();
 	printf("\nPrinting prime numbers between 1 to 100\n\n\n");
-	int prime=1;
+	int prime;
 	for(int i=2;i<100;i++) {
 		prime=1;
 		for(int j=2;j<i;j++) {
@@ -15,7 +15,7 @@ main() {
 			}
 		}
 		if(prime==1) {
-			printf("Prime number : %d\n", i);
+			printf("Prime number: %d\n", i);
 		}
 	}
 }
