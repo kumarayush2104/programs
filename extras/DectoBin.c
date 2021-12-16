@@ -2,13 +2,16 @@
 #include <string.h>
 
 main() {
-	char bin[17]; int dec=0;
-	printf("Binary to Decimal\n\n");
-	printf("Enter binary number: ");
-	scanf("\n%[^\n]s", bin);
-	printf("\n");
-	for(int i=0;i<strlen(bin);i++) {
-		printf("%c\n", bin[i]);
+	int num; char bin[9];
+	printf("Enter a decimal number: ");
+	scanf("%d", &num);
+	for(int i=0;num>0;i++) {
+		if(num%2==0) bin[i]='0';
+		else bin[i]='1';
+		num=num/2;
 	}
-	//printf("%d\n\n", dec);
+	for(int i=strlen(bin);i>=0;i--) {
+		printf("%c", bin[i]);
+	}
+	printf("\n\n");
 }
