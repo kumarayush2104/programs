@@ -2,10 +2,10 @@
 #include <string.h>
 
 main() {
-	int num; char bin[9];
+	int num; char bin[9], i;
 	printf("Enter a decimal number: ");
 	scanf("%d", &num);
-	for(int i=0;num>0;i++) {
+	for(i=0;num>0;i++) {
 		if(num%2==0) bin[i]='0';
 		else bin[i]='1';
 		num=num/2;
