@@ -10,7 +10,6 @@ void main() {
 	scanf("%d", &num2);
 	printf("\nNumbers before swapping %d, %d\n\n", num1, num2);
 	swap(num1,num2);
-	main();
 }
 
 
