@@ -2,7 +2,7 @@
 #include <string.h>
 
 main() {
-	int num; char bin[10000], i;
+	int num; char bin[1000], i;
 	printf("Enter a decimal number: ");
 	scanf("%d", &num);
 	for(i=0;num>0;i++) {
