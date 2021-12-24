@@ -1,19 +1,29 @@
 #include <stdio.h>
 #include "include/enroll.h"
 
-main() {
-        enroll();
-	int arr[11], size=sizeof(arr)/sizeof(int), fnl[size], small, j=1;
-	for(int i=1;i<size;i++) {
-		printf("Enter number %d: ", i);
-		scanf("%d", &arr[i]);
-	}
-	small=arr[1];
-	for(int i=size;i>1;i--) {
-		if(small <= arr[i]) printf("%d ", arr[i]);
-	}
-	printf("\n\n");
-	/*for(int i=1;i<size;i++) {
-		printf("%d ", fnl[i]);
-	}*/
+void main(void) {
+    enroll();
+    int arr[10], size=sizeof(arr)/sizeof(int);
+   
+    for(int i=0;i<size;i++) {
+        printf("Enter %d number: ", i+1);
+        scanf("%d", &arr[i]);
+    }
+    printf("Numbers in ascending order: ");
+    for(int i=0;i<size;i++) {
+        printf("%d ", sort(arr,  i, size));
+    }
+}
+
+int sort(int arr[10], int index, int size) {
+    int small = arr[index], tmp;
+    for(int i=index;i<size;i++) {
+        if(small>arr[i]) {
+            tmp = small;
+            small=arr[i];
+            arr[i]=tmp;
+        }
+    }
+   
+    return small;
 }
