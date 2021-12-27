@@ -2,8 +2,8 @@
 #include <string.h>
 
 main() {
-	int num; char bin[1000], i;
-	printf("Enter a decimal number: ");
+	int num; char bin[sizeof(int)*16], i;
+	printf("Enter an integer number (expected size: %d bytes): ", sizeof(int));
 	scanf("%d", &num);
 	for(i=0;num>0;i++) {
 		if(num%2==0) bin[i]='0';
