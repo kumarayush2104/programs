@@ -1,7 +1,7 @@
 #include <stdio.h>
 int i;
 main() {
-	for( i=0; i<256; ++i) {
+	for( i=0; i<=127; i++) {
 		printf("%d: %c\n", i, i);
 	}
 }

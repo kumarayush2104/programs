@@ -1,9 +1,13 @@
 #include <stdio.h>
 
 main() {
-	char str[100]="ututuslfjlfjla";
-	int i=0;
-//	printf("\n\n");
-	while(str[i]!='\0') i++;
-	printf("\n%d\n", i);
+	int sum, ans=0;
+	for(int i=1;i<=5;i++) {
+		sum=1;
+		for(int j=1;j<=i;j++) {
+			sum = sum * 10;
+		}
+		ans = ans + sum;
+	}
+	printf("%d\n\n", ans-5);
 }
