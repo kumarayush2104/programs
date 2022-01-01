@@ -13,7 +13,7 @@ _start:
 
 	mov eax, 3
 	mov ecx, num
-	mov edx, 4
+	mov edx, 6
 	int 80H
 
 	mov eax, 4
@@ -23,7 +23,7 @@ _start:
 
 	mov eax, 4
 	mov ecx, num
-	mov edx, 4
+	mov edx, 6
 	int 80H
 
 	mov ebx, 0
@@ -38,4 +38,4 @@ section .data
 	msg2.len equ $- msg2
 
 section .bss
-	num resb 5
+	num resb 6
