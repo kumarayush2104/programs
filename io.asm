@@ -1,6 +1,6 @@
 ;
-;
-;
+; file io.asm
+; Take a input and print it
 ;
 
 section .text
