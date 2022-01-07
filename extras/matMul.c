@@ -3,7 +3,7 @@
 main() {
 	// var key *switch
 
-	int mat1[3][3]; int mat2[3][3], key=0, out=0;
+	int mat1[3][3]; int mat2[3][3], key=1, out=0;
 	system("clear");
 	if(key==1) {
 		printf("\n\t\tMatrix-1\n");
