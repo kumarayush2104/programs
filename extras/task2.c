@@ -10,7 +10,7 @@ void func(int *ptr, int size) {
     printf("Numbers in user_array are: \n");
     for(int i=0;i<=size;i++) printf("%d\n", *(ptr + i)+1); 
     /* Extracting the values store on memory location with *(ptr) and 
-	  using "+i" as increment to the memory location to print the remaining array elements. */
+       using "+i" as increment to the memory location to print the remaining array elements. */
 }
 
 void main(void) {
