@@ -7,10 +7,10 @@
 #include <stdio.h>
 
 void swap(int *ptr1, int *ptr2) {
-    int tmp = *ptr1;
+    int tmp = *ptr1; // An extra temporary variable to hold the intial value of *ptr1 memory location
     *ptr1 = *ptr2;
     *ptr2 = tmp;
-    printf("Number after swapping: %d, %d\n\n", *ptr1, *ptr2);
+    printf("Number after swapping: %d, %d\n\n", *ptr1, *ptr2); // printing the elements of memory location ptr1 and ptr2
 }
 
 void main(void) {
@@ -20,5 +20,5 @@ void main(void) {
     printf("Enter second number: ");
     scanf("%d", &num2);
     printf("Number before swapping: %d, %d\n", *&num1, *&num2);
-    swap(&num1, &num2);
+    swap(&num1, &num2); // passing both number with reference (memory locations)
 }
