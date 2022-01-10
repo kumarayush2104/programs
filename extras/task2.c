@@ -8,7 +8,7 @@
 
 void func(int *ptr, int size) {
     printf("Numbers in user_array are: \n");
-    for(int i=0;i<=size;i++) printf("%d\n", *(ptr + i));
+    for(int i=0;i<=size;i++) printf("%d\n", *(ptr + i)+1);
 }
 void main(void) {
     int user_array[9], arr_size=sizeof(user_array)/sizeof(int);
