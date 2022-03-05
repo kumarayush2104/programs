@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>	
+		<title>How to implement id in HTML</title>
+		<style>
+			a {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body style="font-size: 18px">
+		<h2 style="text-align: center">ACPI</h2>
+		<h4>Table of Contents: </h4>
+		<a href="#des">Description</a><br>
+		<a href="#his">History</a><br>
+		<a href="#os">Operating Systems</a><br>
+		<a href="#sec">Security Risks</a>
+		<h2 id="des">Description</h2>
+		<p>In a computer, the Advanced Configuration and Power Interface (ACPI) provides an open standard that operating systems can use to discover and configure computer hardware components, to perform power management (e.g. putting unused hardware components to sleep), to perform auto configuration (e.g. Plug and Play and hot swapping), and to perform status monitoring. First released in December 1996, ACPI aims to replace Advanced Power Management (APM), the MultiProcessor Specification, and the Plug and Play BIOS (PnP) Specification.ACPI brings power management under the control of the operating system, as opposed to the previous BIOS-centric system that relied on platform-specific firmware to determine power management and configuration policies. The specification is central to the Operating System-directed configuration and Power Management (OSPM) system. ACPI defines hardware abstraction interfaces between the devices firmware (e.g. BIOS, UEFI), the computer hardware components, and the operating systems.
+
+Internally, ACPI advertises the available components and their functions to the operating system kernel using instruction lists ("methods") provided through the system firmware (UEFI or BIOS), which the kernel parses. ACPI then executes the desired operations written in ACPI Machine Language (such as the initialization of hardware components) using an embedded minimal virtual machine.
+
+Intel, Microsoft and Toshiba originally developed the standard, while HP, Huawei and Phoenix also participated later. In October 2013, ACPI Special Interest Group (ACPI SIG), the original developers of the ACPI standard, agreed to transfer all assets to the UEFI Forum, in which all future development will take place.
+
+The UEFI Forum published the latest version of the standard, "Revision 6.4", in end of January 2021.</p>
+		<h2 id="his">History</h2>
+
+		<p>The first revision of the ACPI specification was released in December 1996, supporting 16, 24 and 32-bit addressing spaces. It was not until August 2000 that ACPI received 64-bit address support as well as support for multiprocessor workstations and servers with revision 2.0.
+
+In September 2004, revision 3.0 was released, bringing to the ACPI specification support for SATA interfaces, PCI Express bus, multiprocessor support for more than 256 processors, ambient light sensors and user-presence devices, as well as extending the thermal model beyond the previous processor-centric support.
+
+Released in June 2009, revision 4.0 of the ACPI specification added various new features to the design; most notable are the USB 3.0 support, logical processor idling support, and x2APIC support.
+
+Revision 5.0 of the ACPI specification was released in December 2011, which added the ARM architecture support. The revision 5.1 was released in July 2014.
+
+The latest specification revision is 6.4, which was released in January 2021.</p>
+		<h2 id="os">Operating Systems</h2>
+		<p>Microsoft's Windows 98 was the first operating system to implement ACPI,but its implementation was somewhat buggy or incomplete, although some of the problems associated with it were caused by the first-generation ACPI hardware. Other operating systems, including later versions of Windows, eComStation, ArcaOS, FreeBSD (since FreeBSD 5.0), NetBSD (since NetBSD 1.6), OpenBSD (since OpenBSD 3.8), HP-UX, OpenVMS, Linux, GNU Hurd and PC versions of Solaris, have at least some support for ACPI. Some newer operating systems, like Windows Vista, require the computer to have an ACPI-compliant BIOS, and since Windows 8, the S0ix/Modern Standby state was implemented.
+
+Windows operating systems use acpi.sys to access ACPI events.
+
+ACPI could be disabled on Windows XP and earlier by pressing the F7 key to disable ACPI when Windows setup is starting. With the release of Windows Vista and later, it is no longer possible to do this. In addition, if you have a laptop where Windows cannot interpret its ACPI when trying to install, it will result in a "This BIOS is not ACPI-Complient" 0x0A5 Blue Screen of Death. This problem could be circumvented by pressing F7 on XP and earlier, however, newer Windows such as Vista will require a patch to Windows ACPI.sys driver slipstreamed into the installation media to bypass the issue due to the lack of F7 option during setup.
+
+The 2.4 series of the Linux kernel had only minimal support for ACPI, with better support implemented (and enabled by default) from kernel version 2.6.0 onwards. Old ACPI BIOS implementations tend to be quite buggy, and consequently are not supported by later operating systems. For example, Windows 2000, Windows XP, and Windows Server 2003 only use ACPI if the BIOS date is after January 1, 1999. Similarly, Linux kernel 2.6 blacklisted any ACPI BIOS from before January 1, 2001.
+
+Linux-based operating systems can provide access to ACPI events via acpid.</p>
+		<h2 id="sec">Security Risks</h2>
+		<p>Ubuntu founder Mark Shuttleworth has likened ACPI to Trojan horses. He has described proprietary firmware (ACPI-related or any other firmware) as a security risk, saying that "firmware on your device is the NSA's best friend" and calling firmware (ACPI or non-ACPI) "a Trojan horse of monumental proportions". He has pointed out that low quality, closed source firmware is a major threat to system security: "Your biggest mistake is to assume that the NSA is the only institution abusing this position of trust – in fact, it's reasonable to assume that all firmware is a cesspool of insecurity, courtesy of incompetence of the highest degree from manufacturers, and competence of the highest degree from a very wide range of such agencies." As a solution to this problem, he has called for open-source, declarative firmware (ACPI or non-ACPI), which instead of containing executable code, only describes "hardware linkage and dependencies".
+
+A custom ACPI table called the Windows Platform Binary Table (WPBT) is used by Microsoft to allow vendors to add software into the Windows OS automatically. Some vendors, such as Lenovo and Samsung, have been caught using this feature to install harmful software such as Superfish. Windows versions older than Windows 7 do not support this feature, but alternative techniques can be used. This behavior has been compared to rootkits.</p>
+	</body>
+</html>
