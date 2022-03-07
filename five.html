@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<TITLE>HTML Forms</TITLE>
+	<style>
+		form {
+			border: 2px solid;
+			text-align	: center;
+			width: 30%;
+		}
+		label {
+			font-weight: bold;
+		}
+		#push {
+			margin-left: 32.7%;
+		}
+		#ali {
+			text-align: left;
+		}
+		button {
+			text-decoration: bold;
+			font-size: 20px;
+		}
+	</style>
+</HEAD>
+<BODY>
+	<form>
+			<h1>Personal Information</h1>
+		<div id="ali">
+			<label>Name: </label>
+			<input type="text"/><br><br>
+			<label>Enrollment Number: </label>
+			<input type="number"/><br><br>
+			<label>Date of Birth: </label>
+			<input type="date"/><br><br>
+			<label>Gender: </label>
+			<input type="radio" value="Male">Male</input>
+			<input type="radio" value="Female">Female</input><br><br>
+			<label>City: </label>
+				<select name="Select your City">
+					<option>Bardoli</option>
+					<option>Navsari</option>
+					<option>Surat</option>
+					<option>Valsad</option>
+					<option>Vapi</option>
+				</select><br><br>
+			</input>
+			<label>Select your Course: </label>
+			<input type="checkbox" value="B.tech CSE">B.tech CSE</input>
+			<br>
+			<div id="push">
+	                	<input type="checkbox" value="B.tech CSE">B.tech CSE (SE)</input>
+				<br>
+                		<input type="checkbox" value="B.tech CSE">B.tech CSE (CC)</input> 
+ 			</div>
+		</div><br>
+		<button>Submit</button>
+	</form>
+</BODY>
+</HTML>
