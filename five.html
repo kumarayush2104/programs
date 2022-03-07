@@ -27,31 +27,31 @@
 	<form>
 			<h1>Personal Information</h1>
 		<div id="ali">
-			<label>Name: </label>
-			<input type="text"/><br><br>
-			<label>Enrollment Number: </label>
-			<input type="number"/><br><br>
-			<label>Date of Birth: </label>
-			<input type="date"/><br><br>
-			<label>Gender: </label>
-			<input type="radio" value="Male">Male</input>
-			<input type="radio" value="Female">Female</input><br><br>
-			<label>City: </label>
-				<select name="Select your City">
-					<option>Bardoli</option>
-					<option>Navsari</option>
-					<option>Surat</option>
-					<option>Valsad</option>
-					<option>Vapi</option>
+			<label for="name">Name: </label>
+			<input type="text" name="name"/><br><br>
+			<label for="enroll">Enrollment Number: </label>
+			<input type="number" name="enroll"/><br><br>
+			<label for="dob">Date of Birth: </label>
+			<input type="date" name="dob"/><br><br>
+			<label for="gender">Gender: </label>
+			<input type="radio" value="Male" name="gender">Male</input>
+			<input type="radio" value="Female" name="gender">Female</input><br><br>
+			<label for="city">City: </label>
+				<select name="city">
+					<option value="bardoli">Bardoli</option>
+					<option value="navsari">Navsari</option>
+					<option value="surat">Surat</option>
+					<option value="valsad">Valsad</option>
+					<option value="vapi">Vapi</option>
 				</select><br><br>
 			</input>
-			<label>Select your Course: </label>
+			<label for="course">Select your Course: </label>
 			<input type="checkbox" value="B.tech CSE">B.tech CSE</input>
 			<br>
 			<div id="push">
-	                	<input type="checkbox" value="B.tech CSE">B.tech CSE (SE)</input>
+	                	<input type="checkbox" name="course" value="B.tech CSE (SE)">B.tech CSE (SE)</input>
 				<br>
-                		<input type="checkbox" value="B.tech CSE">B.tech CSE (CC)</input> 
+                		<input type="checkbox" name="course" value="B.tech CSE (CC)">B.tech CSE (CC)</input> 
  			</div>
 		</div><br>
 		<button>Submit</button>
