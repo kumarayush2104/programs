@@ -1,10 +1,12 @@
 #main
-
 lst = []
 while(1):
 	num = input("Enter number (enter exit to quit): ")
 	if num=="exit": break;
-	lst.append(int(num))
+	try:
+		lst.append(int(num))
+	except:
+		print("Enter a valid number")
 
 #function
 def func(*lst):
