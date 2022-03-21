@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+			<legend><h1>Student Information</h1></legend>
+			<table>
+
+				<tr>
+				<td><label for =fname>First name</label></td>        
+				<td>: <input type="text" placeholder="Enter Your first name" name=fname /></td>
+				</tr>
+	
+				<tr>
+				<td><label for=lname>Last name</label></td>
+				<td>: <input type="text" placeholder="Enter Your last name" name=lname /></td>
+
+				<tr>
+				<td><label for="mail">Email ID</label></td>
+				<td>: <input type="email" placeholder="Enter email ID" name="mail" size="40" ></td>
+				</tr>
+
+				<tr>
+				<td><label for="birthdate">D.O.B</label></td>
+				<td>: <input type="date" name="birthdate"></td>
+				</tr>
+
+				<tr>				
+				<td rowspan=2><label for="gender">Gender</label></td>
+				<td>: <input type="radio"name=gender value="male"><label>Male</label><br></td>
+				</tr>
+				<tr>
+				<td>: <input type="radio"name=gender value="female"><label>Female</label></td>
+				</tr>
+
+				<tr>
+				<td><label for="address" style="padding-top:20px">Address</label></td>
+				<td>: <textarea name="address" rows="5" cols="50" placeholder="hello"></textarea></td>
+				</tr>
+			
+				<tr>				
+				<td><label for="hobby">Hobby</label></td>
+				<td>: 				
+				<select name="hobby">
+					<option value="cricket">Cricket</option>
+					<option value="reading">Reading</option>
+					<option value="Acting">Acting</option>
+					<option value="dancing">Dancing</option>
+					<option value="singing">Singing</option>
+				</select>
+				</td>
+				</tr>
+
+				<tr>
+				<td rowspan=3><label for=department>Department</label></td>
+				<td>: <input type="checkbox" name="department" value="cse"><label>CSE</label></td>
+				</tr><tr>
+				<td>: <input type="checkbox" name="department" value="cc"><label>CC</label></td>
+				</tr><tr>
+				<td>: <input type="checkbox" name="department" value="se"><label>SE</label></td>
+				</tr>
+	
+				<tr>
+				<td><input type="submit" value="submit"></td>
+				<td><input type="reset" value="Reset"></td>
+				</tr>
+			</table>
+			</fieldset>
+		</form>
+	</body>
+</HTML>
