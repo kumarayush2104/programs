@@ -1,3 +1,5 @@
+import os
+
 # main
 fp = open("file.txt", "w")
 while 1:
@@ -16,6 +18,7 @@ def func(file):
     lst = file.readlines()
     large = int(lst[0])
     small = int(lst[0])
+    os.remove('file.txt')
     for i in range(len(lst)):
         if large < int(lst[i]):
             large = int(lst[i])
