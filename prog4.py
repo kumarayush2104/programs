@@ -9,57 +9,61 @@ def mat1p():
 		for j in range(int(y)):
 			mat1[i].append(int(input("Enter [%d][%d] element of matrix 1: " % (i+1, j+1))))
 	print("\n\nMatrix 1:")
-	for i in range((int(x)):
+	for i in range(int(x)):
 		print("| ", end = "")
 		for j in range(int(y)):
+			if mat1[i][j] < 10:
+				print("0", end="")
 			print(str(mat1[i][j]) + " ", end="")
 		print("|")
 
 mat2 = []
 def mat2p():
-        print("\n\nMatrix 2: \n")
-        for i in range(int(x)):
+	print("\n\nMatrix 2: \n")
+	for i in range(int(x)):
 		mat2.append([])
-                for j in range(int(y)):
-                        mat2[i].append(int(input("Enter [%d][%d] element of matrix 2: " % (i+1, j+1))))
-        print("\n\nMatrix 2:")
-        for i in range(order):
-                print("| ", end = "")
-                for j in range(order):
-                        print(str(mat2[i][j]) + " ", end="")
-                print("|")
+		for j in range(int(y)):
+			mat2[i].append(int(input("Enter [%d][%d] element of matrix 2: " % (i+1, j+1))))
+	print("\n\nMatrix 2:")
+	for i in range(int(x)):
+		print("| ", end = "")
+		for j in range(int(y)):
+			if mat2[i][j] < 10:
+				print("0", end="")
+			print(str(mat2[i][j]) + " ", end="")
+		print("|")
 
 
 def add(mat1, mat2):
         print("\nAddition:")
-        for i in range(order):
+        for i in range(int(x)):
                 print("| ", end = "")
-                for j in range(order):
+                for j in range(int(y)):
                         print(str(mat1[i][j]+ mat2[i][j]) + " ", end="")
                 print("|")
 
 def sub(mat1, mat2):
         print("\nSubtraction:")
-        for i in range(order):
+        for i in range(int(x)):
                 print("| ", end = "")
-                for j in range(order):
+                for j in range(int(y)):
                         print(str(mat1[i][j]-mat2[i][j]) + " ", end="")
                 print("|")
 
 def trans(mat1):
 	print("\nTranspose")
-	for i in range(order):
+	for i in range(int(x)):
 		print("| ", end = "")
-		for j in range(order):
+		for j in range(int(y)):
 			print(str(mat1[j][i]) + " ", end="")
 		print("|")
 def mul(mat1, mat2):
 	print("\nMultiplication")
-	for i in range(order):
+	for i in range(int(y)):
 		print("| ", end= "")
-		for j in range(order):
+		for j in range(int(y)):
 			out = 0
-			for k in range(order):
+			for k in range(int(x)):
 				out = out + mat1[i][k]*mat2[k][j]
 			print(str(out) + " ", end="")
 		print("|")
@@ -76,5 +80,8 @@ elif opr=='trans':
 	trans(mat1)
 elif opr=='mul':
 	mat1p()
+	tmp = x
+	x = y
+	y = tmp
 	mat2p()
 	mul(mat1, mat2)
