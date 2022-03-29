@@ -1,28 +1,26 @@
-order = 0
-while 1:
-	try:
-		order = int(input("Enter order: "))
-		break
-	except:
-		print("Enter a valid number !")
-mat1 = [[], [], [], []]
+x=y=0
+x,y= input("Enter order: ").split()
+
+mat1 = []
 def mat1p():
 	print("\n\nMatrix 1: \n")
-	for i in range(order):
-		for j in range(order):
+	for i in range(int(x)):
+		mat1.append([])
+		for j in range(int(y)):
 			mat1[i].append(int(input("Enter [%d][%d] element of matrix 1: " % (i+1, j+1))))
 	print("\n\nMatrix 1:")
-	for i in range(order):
+	for i in range((int(x)):
 		print("| ", end = "")
-		for j in range(order):
+		for j in range(int(y)):
 			print(str(mat1[i][j]) + " ", end="")
 		print("|")
 
-mat2 = [[], [], [], []]
+mat2 = []
 def mat2p():
         print("\n\nMatrix 2: \n")
-        for i in range(order):
-                for j in range(order):
+        for i in range(int(x)):
+		mat2.append([])
+                for j in range(int(y)):
                         mat2[i].append(int(input("Enter [%d][%d] element of matrix 2: " % (i+1, j+1))))
         print("\n\nMatrix 2:")
         for i in range(order):
