@@ -26,11 +26,14 @@ for i in ls2:
 lsc = ls1 + ls2
 lsc.sort()
 print("\n\n")
-for i in lsc:
-	if (lsc.count(i)) == 1:
-		lsc.remove(i)
-		continue
-	print("'" + str(i) + "' Occurred " + str(lsc.count(i)) + " times.")
-	for j in range(lsc.count(i)):
-		lsc.remove(i)
+while 1:
+	if len(lsc) == 0:
+		break
+	for i in lsc:
+		if (lsc.count(i)) == 1:
+			lsc.remove(i)
+		else:
+			print("'" + str(i) + "' Occurred " + str(lsc.count(i)) + " times.")
+			for j in range(lsc.count(i)):
+				lsc.remove(i)
 

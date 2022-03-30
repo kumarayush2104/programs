@@ -1,8 +1,11 @@
-x=y=0
-x,y= input("Enter order: ").split()
+def order():
+	x = int(input("Enter x: "))
+	y = int(input("Enter y: "))
+	return x,y
 
 mat1 = []
 def mat1p():
+	x, y = order()
 	print("\n\nMatrix 1: \n")
 	for i in range(int(x)):
 		mat1.append([])
@@ -19,6 +22,7 @@ def mat1p():
 
 mat2 = []
 def mat2p():
+	x, y = order()
 	print("\n\nMatrix 2: \n")
 	for i in range(int(x)):
 		mat2.append([])
@@ -74,6 +78,8 @@ if opr=='add':
 	mat2p()
 	add(mat1, mat2)
 elif opr=='sub':
+	mat1p()
+	mat2p()
 	sub(mat1, mat2)
 elif opr=='trans':
 	mat1p()
