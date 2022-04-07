@@ -1,0 +1,252 @@
+html, body {
+    height: 100%;
+}
+.bg-red {
+    height: 110%;
+    background: linear-gradient(170deg,  #d90647 75%, #ffffff 25%);
+}
+
+.box-1 {
+    display: block;
+    height: 70%;
+    width: 90%;
+    margin-top: 6%;
+}
+.con-1 {
+    padding-top: 90%;
+}
+
+.box-1 > .float-left {
+    height: 90%;
+    float: left;
+    text-align: left;
+    width: 45%;
+}
+
+.box-1 > .float-left > h1 {
+    font-size: 70px;
+}
+
+.box-1 > .float-left > .con-1 {
+    font-size: 24px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.nav-link {
+    font-size: 17px;
+}
+
+.box-1 > .float-right {
+    float: right;
+    width: 50%;
+    height: 90%;
+    text-align: center;
+}
+
+.box-1 > .float-right > img {
+    height: 700px;
+}
+
+.box-1 > .float-left > button {
+    margin-top: 12%;
+    font-size: 25px;
+    color: #d90647;
+    background: white;
+    border: none;
+    padding: 10px 45px 10px 45px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.box-2 {
+    height: 60%;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 16%;
+}
+.box-2 > .float-left {
+    float: left;
+    width: 47%;
+    height: 100%;
+    text-align: center;
+}
+
+.box-2 > .float-left > img {
+    position: absolute;
+}
+.msg1 {
+    left: 12.5%;
+}
+.msg2 {
+    margin-top: 3.5%;
+}
+
+.box-2 > .float-right {
+    float: right;
+    width: 47%;
+    height: 100%;
+    margin-top: 10%;
+    text-align: left;
+}
+
+.box-2 > .float-right > h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 4%;
+}
+.box-2 > .float-right > span {
+    font-size: 24px;
+    color: #808080;
+}
+
+.stop {
+    color: #d90647;
+    font-size: 70px;
+}
+.box-3 {
+    height: 60%;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 16%;
+}
+
+.box-3 > .float-left {
+    float: left;
+    width: 47%;
+    height: 100%;
+    margin-top: 10%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.box-3 > .float-left > h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 4%;
+}
+.box-3 > .float-left > span {
+    font-size: 24px;
+    color: #808080;
+}
+
+.box-3 > .float-right {
+    float: right;
+    width: 47%;
+    height: 100%;
+    text-align: center;
+}
+.box-3 > .float-right > .con1 {
+    position: absolute;
+}
+
+.con2 {
+    margin-left: 32.5%;
+}
+
+.con1 {
+    margin-top: 4.5%;
+}
+
+.box-4 {
+    height: 70%;
+    width: 100%;
+    text-align: center;
+}
+.box-4 > h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 7%;
+}
+
+.com-sec {
+    height: 41%;
+}
+.com-sec > .main {
+    width: 20%;
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-top: -1.5%;
+    color: #808080;
+    margin-left: 5%;
+    font-style: italic;
+    box-shadow: 0 30px 60px rgba(54, 54, 54, 0.15);
+    background-color: #ffffff;
+}
+.com-sec > .sec {
+    text-align: left;
+    float: left;
+    width: 20%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    color: #808080;
+    font-style: italic;
+    margin-left: 15%;
+    border: 1px solid #808080;
+}
+.com-tri {
+    float: left;
+    margin-top: 12.5%;
+    margin-left: -19%;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    color: black;
+    display: inline-block;
+}
+.sign {
+    color: #d90647;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.com-sec > .sec-2 {
+    text-align: left;
+    float: right;
+    width: 20%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    color: #808080;
+    font-style: italic;
+    margin-right: 15%;
+    border: 1px solid #808080;
+}
+
+.ceo {
+    text-align: left;
+    height: 30%;
+    margin-left: 15%;
+}
+
+.ceo > img {
+    margin-top: -0.5%;
+}
+
+.ceo-name {
+    margin-top: -15%;
+    margin-left: 23%;
+    font-size: 18px;
+    color: #363636;
+    font-weight: 500;
+}
+
+.ceo-sign {
+    margin-top: -6.5%;
+    margin-left: 23%;
+    color: #667386;
+    font-weight: 500;
+}
+
+.box-5 {
+    height: 70%;
+    background: linear-gradient(#d90647 100%);
+}
