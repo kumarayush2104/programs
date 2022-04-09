@@ -13,12 +13,10 @@ def two(punc):
 	for i in punc: con = con.replace(i, " ")
 	lst = con.split()
 	while 1:
-		if len(lst) == 0:
-			break
+		if len(lst) == 0: break
 		for i in lst:
 			print(i + " occured " + str(lst.count(i)) + " times.")
-			for j in range(lst.count(i)):
-				lst.remove(i)
+			for j in range(lst.count(i)): lst.remove(i)
 opr = int(input("Enter 1 for search in word\nEnter 2 to print occurance of every word\n: "))
 if opr == 1:
 	one(punc)
