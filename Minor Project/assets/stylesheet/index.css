@@ -208,22 +208,8 @@ a:hover > button { text-decoration: underline; }
     background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
     width: 100%;
 }
-.play-tra {
-    position: relative;
-    top: -655px;
-    left: 606px;
-    height: 519px;
-    width: 292px;
-    background: #000000;
-    opacity: 0.6;
-}
-.play-pho, .play-img {
+.play-pho {
     margin-top: -85px;
-}
-.play-img {
-    top: -910px;
-    position: relative;
-    left: -10px;
 }
 
 .msg-1 {
