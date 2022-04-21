@@ -6,8 +6,8 @@ html, body {
 }
 
 .page-1 {
-    height: 940px;
-    background: linear-gradient(170deg, #eb402c 1%, #d90647 75%, #ffffff 24%);
+    height: 965px;
+    background: linear-gradient(175deg, #eb402c 1%, #d90647 75%, #ffffff 24%);
     width: 100%;
 }
 
@@ -76,7 +76,7 @@ a:hover > button { text-decoration: underline; }
     margin-top: 60px;
 }
 
-.page-2 > .float-right > h1, .page-3 > .float-left > h1, .page-4 > h1, .page-6 > h1, .page-7 > h1{
+.page-2 > .float-right > h1, .page-3 > .float-left > h1, body > h1, .page-6 > h1, .page-7 > h1{
     font-size: 60px;
     color: black;
 }
@@ -128,16 +128,15 @@ a:hover > button { text-decoration: underline; }
 }
 
 .page-4 {
-    width: 100%;
-    text-align: center;
+    flex-direction: row;
+    justify-content:space-evenly;
+    display: flex;
     height: 650px;
 }
 
 .com-win {
     height: 200px;
-    float: left;
     width: 350px;
-    margin-left: 120px;
     text-align: left;
 }
 
@@ -168,7 +167,6 @@ a:hover > button { text-decoration: underline; }
     font-weight: 500;
     border: 1px solid grey;
     padding: 10px 20px 0px 20px;
-    //margin-left: 120px;
 }
 
 .cmsg {
