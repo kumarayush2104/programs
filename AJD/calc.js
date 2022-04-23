@@ -18,6 +18,7 @@ function opr(metin) {
         num1 = parseFloat(targ.textContent);
         met= metin;
         def=1;
+        allow=1;
         targ.innerHTML = "Second number";
     }
 }
