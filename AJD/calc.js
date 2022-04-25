@@ -78,3 +78,10 @@ function jhero() {
         }
     }
 }
+
+function bak() {
+    targ = document.getElementById("textview");
+    text = targ.textContent;
+    targ.innerHTML = text.slice(0, -1);
+}
+
