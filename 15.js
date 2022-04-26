@@ -25,24 +25,27 @@ function num(value) {
 
 function opr(metin) {
     targ = document.getElementById("textview");
-    if(def==0) {
-        num1 = parseFloat(targ.textContent);
+    if(1) {
+        res();
+        if (parseFloat(targ.textContent) !=0 ) {
+            num1 = parseFloat(targ.textContent);
+        }
         met = metin;
         def=1;
         allow=1;
-        targ.innerHTML = "Second number";
-    }
-    if(metin=="+"){
-        document.getElementsByClassName("spe-button-2")[0].setAttribute("style", "color: black; background: pink;")
-    }
-    if(metin=="-"){
-        document.getElementsByClassName("pri-button")[3].setAttribute("style", "color: black; background: pink;")
-    }
-    if(metin=="*"){
-        document.getElementsByClassName("pri-button")[2].setAttribute("style", "color: black; background: pink;")
-    }
-    if(metin=="/"){
-        document.getElementsByClassName("pri-button")[1].setAttribute("style", "color: black; background: pink;")
+        targ.innerHTML = "0";
+        if(metin=="+"){
+            document.getElementsByClassName("spe-button-2")[0].setAttribute("style", "color: white; background: blue;")
+        }
+        if(metin=="-"){
+            document.getElementsByClassName("pri-button")[3].setAttribute("style", "color: white; background: blue;")
+        }
+        if(metin=="*"){
+            document.getElementsByClassName("pri-button")[2].setAttribute("style", "color: white; background: blue;")
+        }
+        if(metin=="/"){
+            document.getElementsByClassName("pri-button")[1].setAttribute("style", "color: white; background: blue;")
+        }
     } 
 }
 
@@ -50,13 +53,13 @@ function spe(metin) {
     targ = document.getElementById("textview");
     if(metin=="C") {
         res()
-        targ.innerHTML = "Enter a number";
+        targ.innerHTML = "0";
         num1=0;
         num2=0;
         def=1;
         met=0;
     }
-    if(metin="P" && ( def == 0  || targ.textContent == "0")) {
+    else if(metin="P" && ( def == 0  || targ.textContent == "0")) {
         if(targ.innerHTML.indexOf(".") == -1) {
             targ.innerHTML += ".";
         }

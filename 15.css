@@ -8,15 +8,10 @@
 
 #textview {
     font-weight: 500;
-    color: orange;
+    color: rgb(255, 255, 103);
     text-align: right;
     font-size: 30px;
     padding: 20px 0px 20px 0px;
-}
-.spe-button-1 {
-    color: orange;
-    width: 104px;
-    height: 48px;
 }
 
 .spe-button-2 {
@@ -24,9 +19,9 @@
     width: 46px;
 }
 
-.pri-button {color: orange;}
+.pri-button {color: rgb(255, 255, 103);}
 
-.floor-5 > td > input , .spe-button-2 {background: orange; color: black;}
+.floor-5 > td > input , .spe-button-2 {background: rgb(255, 255, 103); color: black;}
 table { background: black; }
 input {
     font-weight: 500;
@@ -39,6 +34,6 @@ input {
 }
 
 td > input:hover {
-    background: pink;
-    color: black;
+    background: blue;
+    color: white;
 }
