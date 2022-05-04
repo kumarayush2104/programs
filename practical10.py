@@ -1,7 +1,6 @@
-# Name: Ayush Kumar
-# Enrollment Number: 202103103510253
-# Program: B.Tech Computer Science and Engineering
-# Practical: 10
+# B.Tech Computer Science and Engineering
+# Ayush Kumar
+# 202103103510253
 
 ## Options
 opr = input("Enter add for addition\nEnter mul for multiplication\nEnter sub for Subtraction\nEnter div for division\nEnter anything else to exit\nEnter odev to check odd/even\n: ")

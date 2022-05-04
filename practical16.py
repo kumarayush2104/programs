@@ -1,7 +1,6 @@
-# Name: Ayush Kumar
-# Enrollment Number: 202103103510253
-# Program: B.Tech Computer Science and Engineering
-# Practical: 16
+# B.Tech Computer Science and Engineering
+# Ayush Kumar
+# 202103103510253
 
 class c:
     def __init__(self, c_learning, c_professor):

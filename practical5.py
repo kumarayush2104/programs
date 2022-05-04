@@ -1,28 +1,27 @@
-# Name: Ayush Kumar
-# Enrollment Number: 202103103510253
-# Program: B.Tech Computer Science and Engineering
-# Practical: 5
+# B.Tech Computer Science and Engineering
+# Ayush Kumar
+# 202103103510253
 
 # Declaring a String
 str = "Hello World"
 print(str)
 
-# lower()
+# lower(), transforms the text to lower case
 print(str.lower())
 
-# upper()
+# upper(), transforms the text to upper case
 print(str.upper())
 
-# join()
+# join(), joins all elements of list to forma  string
 lst = ["This", "is", "a", "string"]
 print(" ".join(lst))
 
-# split()
+# split(), splits the string into list
 lst = str.split(" ")
 print(lst)
 
-# find()
+# find(), used for search a part of string
 print(str.find("llo"))
 
-# replace()
+# replace(), used for find and replace a part of string
 print(str.replace("World", "Python"))
