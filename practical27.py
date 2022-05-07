@@ -2,5 +2,7 @@
 # Ayush Kumar
 # 202103103510253
 
-for i in range(65, 91):
-    open(chr(i) + ".txt", "w")
+import string
+
+for i in range(len(string.ascii_uppercase)):
+    open(string.ascii_uppercase[i] + ".txt", "w")
