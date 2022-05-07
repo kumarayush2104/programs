@@ -28,11 +28,14 @@ function validate() {
     var email = document.form1.mail.value;
     var dep = document.form1.dep.value;
     var enroll = document.form1.enroll.value;
+    var boB = document.form1.boB.value;
     var inid = document.form1.inid.value;
     var retd = document.form1.retd.value;
     if (name == "" || name == null || !name.match("[a-zA-Z]")) {
         alert("Please enter your Name !");
     } else if (enroll == "" || enroll == null || !enroll.match("[0-9]{15}")) {
+        alert("Please enter a valid Enrollment Number !");
+    } else if (boB == "" || boB == null || !enroll.match("[0-9]{10}")) {
         alert("Please enter a valid Enrollment Number !");
     } else if (inid == "") {
         alert("Please enter a correct issue date !");
