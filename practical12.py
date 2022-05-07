@@ -15,6 +15,6 @@ class student:
     def display(self):
         print("Name:", self.std_name, "\nAge:", self.std_age, "\nBranch:", self.std_branch, "\nCity:", self.std_city)
         
-std1 = student()
-std1.get_data("Ayush Kumar", "19", "B.tech CSE", "Surat")
-std1.display()
+std_obj = student()
+std_obj.get_data("Ayush Kumar", "19", "B.tech CSE", "Surat")
+std_obj.display()
