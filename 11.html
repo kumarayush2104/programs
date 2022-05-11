@@ -23,7 +23,7 @@
         @keyframes move {
             0% {margin-left: 0%;}
             50% {margin-left: 50%;}
-            100% {margin-left: 90%;}
+            100% {margin-left: 70%;}
         }
         .moving {
             margin-top: 20px;
@@ -31,11 +31,12 @@
             animation-duration: 5s;
             animation-delay: 1s;
             animation-iteration-count: infinite;
-            width: 60px;
+            width: 200px;
             height: 20px;
             overflow: hidden;
             text-overflow: ellipsis;
             box-shadow: 2px 2px 5px green;
+            font-size: 17px;
         }
         .rotate {
             writing-mode:vertical-rl;
@@ -62,10 +63,10 @@
 </head>
 <body>
     <div class="one">
-        <button class="moving">Unlimited text</button>
+        <button class="moving">Unlimited text which be keep going and going and going</button>
     </div>
     <br />
-    <div style="text-align: center; width: 60%;">
+    <div style="text-align: center; width: 63%; height: 200px;background: linear-gradient(#c2fcd2, #f9fcc2);">
         <div class="two">
             <p class="rotate">Rotating a text by 90deg.</p>
         </div>

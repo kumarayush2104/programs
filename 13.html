@@ -7,7 +7,7 @@
                 numbers = document.getElementsByClassName("num");
                 large = parseFloat(numbers[0].value);
                 if(parseFloat(numbers[1].value) > large) large=parseFloat(numbers[1].value);
-                else if(parseFloat(numbers[2].value) > large) large=parseFloat(numbers[2].value);
+                if(parseFloat(numbers[2].value) > large) large=parseFloat(numbers[2].value);
                 document.getElementById("trig").textContent = large.toString() + " is Largest.";
             }
         </script>
