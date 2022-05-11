@@ -2,26 +2,26 @@
 # Ayush Kumar
 # 202103103510253
 
-# Declaring a String
+print("\nDeclaring a String")
 str = "Hello World"
 print(str)
 
-# lower(), transforms the text to lower case
+print("\nlower(), transforms the text to lower case")
 print(str.lower())
 
-# upper(), transforms the text to upper case
+print("\nupper(), transforms the text to upper case")
 print(str.upper())
 
-# join(), joins all elements of list to forma  string
+print("\njoin(), joins all elements of list to forma  string")
 lst = ["This", "is", "a", "string"]
 print(" ".join(lst))
 
-# split(), splits the string into list
+print("\nsplit(), splits the string into list")
 lst = str.split(" ")
 print(lst)
 
-# find(), used for search a part of string
+print("\nfind(), used for search a part of string")
 print(str.find("llo"))
 
-# replace(), used for find and replace a part of string
+print("\nreplace(), used for find and replace a part of string")
 print(str.replace("World", "Python"))

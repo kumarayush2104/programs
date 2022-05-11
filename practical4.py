@@ -2,34 +2,34 @@
 # Ayush Kumar
 # 202103103510253
 
-# Create of dictionary in python
+print("\nCreate of dictionary in python")
 dict = { "name":"xyz", "age":18, "branch":"B.tech CSE" }
 print(dict)
 
-# Overwriting of values (using index name)
+print("\nOverwriting of values (using index name)")
 dict["name"] = "abc"
 print(dict)
 
-# copy(), copies the dictionary
+print("\ncopy(), copies the dictionary")
 dict_cp = dict.copy()
 print(dict_cp)
 
-# get(), used to find out element or value of the given index name
+print("\nget(), used to find out element or value of the given index name")
 print(dict.get("name"))
 
-# items(), lists index names with its values/elements
+print("\nitems(), lists index names with its values/elements")
 print(dict.items())
 
-# keys(), prints indexes of the element
+print("\nkeys(), prints indexes of the element")
 print(dict.keys())
 
-# popitem(), removes last element of the dict
+print("\npopitem(), removes last element of the dict")
 dict.popitem()
 print(dict)
 
-# values(), prints all the elements of the dictionary without their index name
+print("\nvalues(), prints all the elements of the dictionary without their index name")
 print(dict.values())
 
-# clear(), removes everything from the dictionary
+print("\nclear(), removes everything from the dictionary")
 dict.clear()
 print(dict)

@@ -6,9 +6,9 @@ src = input("Name of source file: ")
 des = input("Name of destination file: ")
 
 src_op = open(src, "r")
-des_op = open(des, "r")
+des_op = open(des, "w")
 
-des_op.write(src.read())
+des_op.write(src_op.read())
 
 src_op.close()
 des_op.close()

@@ -4,4 +4,4 @@
 
 course = input("Enter a Student Course: ")
 fp = open("course.txt", "w")
-fp.write(course)
+fp.write(course + "\n")

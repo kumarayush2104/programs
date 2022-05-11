@@ -6,7 +6,7 @@ class employee:
     emp_name = None
     emp_age = None
     emp_city = None
-    def get_data(self, name, age , city):
+    def get_data(self, name, age, city):
         self.emp_name = name
         self.emp_age =  age
         self.emp_city = city
@@ -19,5 +19,6 @@ class emp_derived(employee):
 
 emp1 = employee()
 emp1.get_data(input("Enter Employee Name: "), input("Enter Employee's Age: "), input("Enter Employee's City: "))
+print("\033c", end="")
 emp_derived(emp1)
 
