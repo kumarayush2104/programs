@@ -53,6 +53,7 @@ print(lst2)
 
 print("\nSlicing in Python")
 print("list[from(small):until(large)], to get a certain set of number")
+print("Slicing can be using with any iterable (list, tuple and string) in python")
 print("EG-1", lst[0:5])
 print("EG-2", lst[-5:-1])
 
