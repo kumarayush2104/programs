@@ -1,6 +1,6 @@
 import os
 
-print("File System operations using os module\nfew of the method of os module:")
+print("File System operations using os module\nfew methods of os module:")
 
 print("1. os.getcwd(): getcwd= get current working directory\n", os.getcwd())
 
