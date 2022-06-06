@@ -1,0 +1,8 @@
+print("Files in python their modes !!")
+print("w:  create files, overwrites, cursor-at-beginning")
+print("r: reads, cursor-at-beginning")
+print("a:  create files, writes, cursor-at-end")
+print("w+: create files, overwrites, reads, cursor-at-beginning")
+print("r+: writes, reads, cursor-at-beginning")
+print("a+: create files, writes, reads, cursor-at-end")
+print("check 6-1-1.py for read/write example !!")
