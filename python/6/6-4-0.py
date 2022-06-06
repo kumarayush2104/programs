@@ -2,10 +2,6 @@ import io
 
 print("IO Modules and some brief discussions on it: ")
 print("From what I understood so far, the io modules is used to tell python to consider python's own handle for specific things, like to store a string?, to store a byte?, open a file?, or any another operations where memory (aka RAM) is concerned.")
-print("\nBut why we need to do such thing ?")
-print("From my point of view, io module can be used for more secure operations in Python")
-print("For example, you are opening a file in memory (aka RAM) directly or you are opening it in a buffer (assume buffer like a RAM, but at virtual level) ?? What do you think is more secure ?")
-print("Obviously file opening in the upper level buffer is always secure. Since you are not touching the memory (aka RAM directly)")
 
 print("Some methods of io module\n\n")
 print("1. We can buffer some strings into the variable like:")

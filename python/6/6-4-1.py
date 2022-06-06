@@ -1,6 +1,4 @@
-from ctypes import sizeof
 import io
-from sys import getsizeof
  
 print("Just like an example from 6-4-0, here we have a io.StringIO which handles string i/o")
 
