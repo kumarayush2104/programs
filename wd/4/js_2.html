@@ -1,0 +1,16 @@
+<html>
+<body>
+<p></p>
+<button onclick="run(1)">this button is using an attribute</button> <button id="event">this button is using an event listener</button> <button onclick="document.location.reload()">Reset</button>
+<script>
+	function run(state) {
+		var para = document.getElementsByTagName("p")[0];
+		if(state==1) para.innerHTML = "Using an Attribute";
+		else para.innerHTML = "Using an event listener";
+	}
+
+
+	document.getElementById("event").addEventListener("click",  function a() { run(2); } );
+</script>
+</body>
+</html>

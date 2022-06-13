@@ -1,0 +1,17 @@
+<html>
+<body>
+<button onclick="task(1)">Add an Element</button> <button onclick="task(0)">Remove an Element</button>
+<script>
+	function task(status) {
+		if(status) {
+			var para = document.createElement("h1");
+			var text = document.createTextNode("Hello World");
+			para.append("text"); // We can use innerHTML too !!!
+			document.body.appendChild(para);
+		} else {
+			document.body.removeChild(document.getElementsByTagName("h1")[0]);
+		}
+	}
+</script>
+</body>
+</html>
