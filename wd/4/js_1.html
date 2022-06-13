@@ -1,0 +1,22 @@
+<html>
+<body>
+<h1>We can add javascript inside head tag or inside body(just before closing the body)</h1>
+
+<p id="id">This is id</p>
+<p class="class">This is class</p>
+<p class="class">This is also a class</p>
+<p>This is p tag without anyid or class</p>
+<button onclick="one(1)">id</button> <button onclick="one(2)">class</button> <button onclick="one(3)">tagname</button> <button onclick="window.location.reload('Refresh')">reset</button>
+<h1>pressing the button will change the text color  of certain property</h1>
+<script>
+	function one(status) {
+		if(status==1)  document.getElementById("id").setAttribute("style", "color: red");
+		else if (status==2) {
+			for(i=0; i<3; i++) document.getElementsByClassName("class")[i].setAttribute("style", "color: red");
+		}
+		else {
+			for(i=0; i<=3; i++) document.getElementsByTagName("p")[i].setAttribute("style", "color: red");
+		}
+	}
+</script>
+</body>
