@@ -70,6 +70,7 @@ print("List Demonstration: ['first', 'person', 'person', 'person', 'person' , 'n
 print("\nSo while using list as queues we need to remember that element in the index(0) will be removed first, and a new element will be always at -1 index")
 print("\n\nStacks: stacks are different from Queues, because in stacks, the newer element gets removed first and the older element will be removed at last")
 print("List Demonstration: ['first', 'second', 'third'],  here first is the oldest element, but third will be removed first")
+print("Check 2-extra-1.py for queues and 2-extra-2.py for stacks !")
 
 print("\ndel function, del(var), removes a variable from the memory")
 del(lst2)
